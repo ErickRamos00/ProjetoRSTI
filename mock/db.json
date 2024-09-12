@@ -1,0 +1,74 @@
+{
+  "cadastros": [
+    {
+      "id": "0b95",
+      "nome": "erick",
+      "cnpj": "12345678",
+      "email": "erick@hotmail.com",
+      "telefone": "53984365875",
+      "nome_empresa": "dadad",
+      "descricao": "dadadda",
+      "url": "dadaddadad"
+    },
+    {
+      "id": "a19f",
+      "nome": "Erick ",
+      "cnpj": "123456789",
+      "email": "erick@hotmail.com",
+      "telefone": "53984397497",
+      "nome_empresa": "erick",
+      "descricao": "dkãdkadajkçdjah",
+      "url": "dhaldaldkjahdç"
+    },
+    {
+      "id": "8686",
+      "nome": "Erick Ramos ",
+      "cnpj": "04500607056",
+      "email": "Azevedoerick@yahoo.com.br",
+      "telefone": "53984397497",
+      "nome_empresa": "Erick's Tech",
+      "descricao": "Empresa de tecnologia",
+      "url": "dhaudhaudha"
+    },
+    {
+      "id": "4f10",
+      "nome": "erick ",
+      "cnpj": "123456789",
+      "email": "azevedoerick@yahoo.com.br",
+      "telefone": "53984397497",
+      "nome_empresa": "erick's tech",
+      "descricao": "adhlakdhaldkhalk",
+      "url": "adhakldajhdladhajlk"
+    },
+    {
+      "id": "f7bc",
+      "nome": "erick ",
+      "cnpj": "123456789",
+      "email": "azevedoerick@yahoo.com.br",
+      "telefone": "53984397497",
+      "nome_empresa": "erick's tech",
+      "descricao": "adhlakdhaldkhalk",
+      "url": "adhakldajhdladhajlk"
+    },
+    {
+      "id": "9ac9",
+      "nome": "dadad",
+      "cnpj": "434",
+      "email": "dadada@sdadhjalda.com",
+      "telefone": "234",
+      "nome_empresa": "",
+      "descricao": "",
+      "url": ""
+    },
+    {
+      "id": "3f0a",
+      "nome": "dadad",
+      "cnpj": "434",
+      "email": "dadada@sdadhjalda.com",
+      "telefone": "234",
+      "nome_empresa": "",
+      "descricao": "",
+      "url": ""
+    }
+  ]
+}

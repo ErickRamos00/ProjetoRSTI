@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #1C1364;
+}
+main{
+    background-color: white;
+}
+.total{
+   
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+#log_img{
+    width: 109px;
+    height: 109px;
+}
+.menu a{
+    padding:10px;
+    color:  #ffffff;
+    text-decoration: none;
+    
+
+}
+#nv ul{
+    display:flex;
+    list-style: none;
+}
+
+#text{
+    font-family: "inter";
+    font-size: 28px;
+    letter-spacing: 78%;
+    margin: 100px auto;
+    text-align: center;
+   text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.246);
+    width: 60%;
+
+}
+.grafico_Par{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    margin: 40px auto;
+    align-items: center;
+    gap: 70px;
+    
+}
+#text1{
+    font-family: INTER;
+    font-size: 16px;
+    letter-spacing: 78%;
+    text-align: justify;
+    margin-top: 100px;
+    width: 30%;
+    line-height: 30px;
+    
+}
+#grafic{
+    width: 500px;
+    height: auto;
+    margin-right: 40px;
+}
+
+
+#Paragrafo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+    margin-top: 50px;
+}
+/* .papa{
+    background-color: rgb(229, 229, 229);
+    
+    
+} */
+/* Parte do footer */
+.footer {
+    background-color: #1C1364;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-icons {
+    margin: 10px 0;
+}
+.footer-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer-icons img {
+    width: 25px;
+    height: 25px;
+    margin-left: 70px;
+}
+.footer p{
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    font-size: 13px;
+}
+
+
+
+/* 
+CSS Grafico */
+
+
+.chart-container {
+    width: 50%;
+    height: 400px;
+    /* margin: auto; */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-bottom: 2px solid #000;
+    position: relative;
+}
+.bar {
+    width: 15%;
+    background-color:#1C1364;;
+    text-align: center;
+    color: white;
+    margin: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px;
+    padding: 5px;
+}
+.bar span {
+    margin-top: 5px;
+}
+
+
+/* Circulo para localização */
+#Bairros{
+    
+    color: rgb(7, 7, 7);
+    font-size: 18px;
+    box-shadow: 2px 2px 2px 2px #4257e1c0;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 200px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+.fundo{
+    
+    
+    width: 800px;
+    border-radius: 20px;
+    background-color:none;
+    box-shadow: 10px 10px 10px rgb(158, 157, 157);
+    
+    margin: 0 auto;
+    /* margin-bottom: 20px; */
+}   
+
+
+.circulo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 8px 0;
+   
+    
+   
+}
+
+
+#cl{
+    box-shadow: 2px 2px 2px 2px #4257e1c0;
+    width: 126px;
+    height: 126px;
+    background-color:#1C1364;
+    border-radius: 100%;  
+   
+}
+#cl p{
+    text-align: center;
+    margin-top: 50px; 
+    color: white;
+    font-size: 18px;
+ 
+}
+#cl a{
+    text-decoration: none;
+    
+    
+   
+}
+
+/* Parte das imagens passando */
+.slider{
+    margin: 0 auto;
+
+    width: 50rem;
+    height: 400px;
+    overflow: hidden; /* apenas a primeira img aparecendo */
+    border-radius: 20px;
+}
+
+.slides-bairros{
+    width: 400%;
+    height: 400px;
+    display: flex;
+   
+    
+}
+
+.slides-bairros input{
+    display: none;
+}
+
+.slides-bairros-img{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    
+}
+
+.slides-bairros-img img{
+    width: 50rem;
+    max-height: 110%;
+   
+    margin-bottom: 10px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 50rem; /* width do tamanho do slider */
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer; /* para ter o mouse que parece um link que da pra clicar */
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: purple;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -125%;
+}
+
+.navigation-auto div{
+    border: 2px solid purple;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: purple;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: purple;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: purple;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: purple;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: purple;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background-color: purple;
+}
+
+/* Parte para o css dos cards passando */
+.card-comercio{
+    display: flex;
+    flex-direction: row;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    /* background-color: grey; */
+    padding: 40px 0;
+    margin: 40px auto;
+    
+}
+
+.slide-content{
+    /* padding: 45px 20px; */
+    margin: 0 40px;
+    /* background-color: red; */
+    overflow: hidden;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+    left: 0;
+    top: 0;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070f4;
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #fff ;
+}
+
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px; 
+    background-color: #fff;
+    padding: 2px;
+}
+
+.card-image .card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.comercio{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.descricao{
+    font-size: 14px;
+    color: 707070;
+    text-align: center;
+}
+
+ 
+input {
+    margin: 8px;
+    border-radius: 50px;
+    padding: 5px;
+    width: 250px;
+    border: 2px solid #1C1364;
+}
+
+input:focus {
+    outline: 2px solid #1C1364;
+}
+
+textarea {
+    border-radius: 30px;
+    border: 3px solid #1C1364;
+    margin: 15px;
+    padding: 5px;
+    width: 225px;
+    height: 90px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: 2px solid #1C1364;
+}
+
+.enviar {
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-weight: bold;
+    background-color: #1C1364;
+    margin-top: 10px;
+    width: 98%;
+    padding: 10px;
+}
+
+.enviar:hover {
+    background-color: #19D2C2;
+    border: 3px solid #19D2C2;
+}
+
+fieldset {
+    border: 4px solid transparent;
+    border-radius: 30px;
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    filter: drop-shadow(15px 3px 20px rgba(0, 0, 0, 0.25));
+    position: relative;
+    transition: border-color 0.9s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 1.2rem;
+    background-color: #1C1364;
+    border-radius: 50px;
+    border: 3px solid #1C1364;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    text-align: center;
+    width: 250px;
+    margin: 10px auto;
+}
+
+
+/* Modal Overlay */
+.modal-overlay {
+    display: none; /* Começa oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro e transparente */
+    align-items: center; /* Centraliza o modal verticalmente */
+    justify-content: center; /* Centraliza o modal horizontalmente */
+    z-index: 1000; /* Garante que o modal fique sobre outros conteúdos */
+}
+
+/* Modal Content */
+.modal-content {
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+/* Botão de fechar */
+.close-modal {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    z-index: 1;
+}
+
+
+
